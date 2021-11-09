@@ -1,0 +1,106 @@
+2021-11-07 10:58:02.107 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 21860 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 10:58:02.109 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 10:58:02.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 10:58:02.807 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 10:58:02.808 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 10:58:02.808 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 10:58:02.875 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 10:58:02.875 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2021-11-07 10:58:03.155 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 10:58:03.168 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 10:58:03.177 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.363 seconds (JVM running for 2.853)
+2021-11-07 10:59:29.810 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 12188 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 10:59:29.812 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 10:59:30.466 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 10:59:30.473 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 10:59:30.473 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 10:59:30.474 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 10:59:30.537 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 10:59:30.537 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 690 ms
+2021-11-07 10:59:30.798 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 10:59:30.810 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 10:59:30.818 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.291 seconds (JVM running for 2.159)
+2021-11-07 11:00:29.482 [http-nio-2957-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 11:00:29.482 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-07 11:00:29.483 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-07 11:01:18.611 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 704 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:01:18.613 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 11:01:19.234 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 11:01:19.240 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:01:19.241 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 11:01:19.241 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 11:01:19.308 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 11:01:19.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 663 ms
+2021-11-07 11:01:19.563 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:01:19.576 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 11:01:19.584 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.241 seconds (JVM running for 2.009)
+2021-11-07 11:01:24.644 [http-nio-2957-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 11:01:24.644 [http-nio-2957-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-07 11:01:24.645 [http-nio-2957-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-11-07 11:03:21.510 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 14488 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:03:21.512 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 11:03:22.131 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 11:03:22.137 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:03:22.138 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 11:03:22.138 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 11:03:22.198 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 11:03:22.198 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 653 ms
+2021-11-07 11:03:22.448 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:03:22.460 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 11:03:22.467 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.226 seconds (JVM running for 1.991)
+2021-11-07 11:03:25.328 [http-nio-2957-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 11:03:25.328 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-07 11:03:25.329 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-07 11:04:16.212 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 22864 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:04:16.214 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 11:04:16.833 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 11:04:16.840 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:04:16.840 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 11:04:16.841 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 11:04:16.902 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 11:04:16.902 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 657 ms
+2021-11-07 11:04:17.159 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:04:17.171 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 11:04:17.179 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.232 seconds (JVM running for 2.059)
+2021-11-07 11:04:20.536 [http-nio-2957-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 11:04:20.536 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-07 11:04:20.537 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-11-07 11:07:34.296 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 13232 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:07:34.298 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 11:07:34.912 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 11:07:34.919 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:07:34.919 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 11:07:34.919 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 11:07:34.980 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 11:07:34.980 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+2021-11-07 11:07:35.227 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:07:35.239 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 11:07:35.247 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.219 seconds (JVM running for 1.989)
+2021-11-07 11:07:41.151 [http-nio-2957-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 11:07:41.151 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-07 11:07:41.152 [http-nio-2957-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-11-07 11:07:50.497 [http-nio-2957-exec-3] INFO  com.fuxin.e9c50.controller.IotServerController - {"RequestId":"6f4750c3-76b3-44e0-9d51-ab0d84bc3e69"}
+2021-11-07 11:08:14.742 [http-nio-2957-exec-4] INFO  com.fuxin.e9c50.controller.IotServerController - {"RequestId":"60524119-f2d0-4d22-8163-7fcb83129776"}
+2021-11-07 11:09:54.288 [http-nio-2957-exec-5] INFO  com.fuxin.e9c50.controller.IotServerController - {"RequestId":"563601ce-912c-4c16-90aa-50624495c468"}
+2021-11-07 11:11:22.203 [http-nio-2957-exec-8] INFO  com.fuxin.e9c50.controller.IotServerController - {"RequestId":"b70cda30-1d75-4131-a838-429fac84b3fd"}
+2021-11-07 11:11:43.837 [http-nio-2957-exec-9] INFO  com.fuxin.e9c50.controller.IotServerController - {"RequestId":"2f84499a-da46-4a96-8f66-026b6c1eb7b0"}
+2021-11-07 11:14:01.707 [main] INFO  com.fuxin.e9c50.E9C50Application - Starting E9C50Application using Java 1.8.0_271 on DESKTOP-E9C50 with PID 19628 (D:\Projects\Java\E9C50\target\classes started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:14:01.709 [main] INFO  com.fuxin.e9c50.E9C50Application - No active profile set, falling back to default profiles: default
+2021-11-07 11:14:02.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2957 (http)
+2021-11-07 11:14:02.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:14:02.358 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-07 11:14:02.358 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-07 11:14:02.421 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-07 11:14:02.422 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 679 ms
+2021-11-07 11:14:02.681 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2957"]
+2021-11-07 11:14:02.693 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 2957 (http) with context path ''
+2021-11-07 11:14:02.701 [main] INFO  com.fuxin.e9c50.E9C50Application - Started E9C50Application in 1.265 seconds (JVM running for 1.964)
+2021-11-07 11:14:32.139 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.fuxin.e9c50.E9C50ApplicationTests], using SpringBootContextLoader
+2021-11-07 11:14:32.144 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.fuxin.e9c50.E9C50ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-07 11:14:32.144 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fuxin.e9c50.E9C50ApplicationTests]: E9C50ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-07 11:14:32.230 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fuxin.e9c50.E9C50Application for test class com.fuxin.e9c50.E9C50ApplicationTests
+2021-11-07 11:14:32.311 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-07 11:14:32.322 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36804139, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@20bd8be5, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@730d2164, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@24959ca4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10289886, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c86dbc5, org.springframework.test.context.event.EventPublishingTestExecutionListener@461ad730, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ee203eb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1a5a4e19, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7068e664, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60db1c0e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3e78b6a5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@769a1df5]
+2021-11-07 11:14:32.550 [main] INFO  com.fuxin.e9c50.E9C50ApplicationTests - Starting E9C50ApplicationTests using Java 1.8.0_271 on DESKTOP-E9C50 with PID 22184 (started by E9C50 in D:\Projects\Java\E9C50)
+2021-11-07 11:14:32.552 [main] INFO  com.fuxin.e9c50.E9C50ApplicationTests - No active profile set, falling back to default profiles: default
+2021-11-07 11:14:33.741 [main] INFO  com.fuxin.e9c50.E9C50ApplicationTests - Started E9C50ApplicationTests in 1.388 seconds (JVM running for 2.18)
