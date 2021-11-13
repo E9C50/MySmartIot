@@ -4,7 +4,9 @@
 #include <string.h>
 #include <esp_log.h>
 #include <esp_wifi.h>
+
 #include "wifi_ap.h"
+#include "../httpd_server/httpd_server.h"
 
 const char *TAG_WIFI_AP = "TAG_WIFI_AP";
 
@@ -28,6 +30,7 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id
 }
 
 void start_ap() {
+    ESP_LOGI(TAG_WIFI_AP, "starting ap...");
     wifi_config_t wifi_config_ap = {.ap = {
             .ssid = AP_ESP_WIFI_SSID,
             .ssid_len = strlen(AP_ESP_WIFI_SSID),
@@ -42,5 +45,7 @@ void start_ap() {
     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config_ap));
     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
     ESP_ERROR_CHECK(esp_wifi_start());
-    ESP_LOGI(TAG_WIFI_AP, "start ap...");
+    ESP_LOGI(TAG_WIFI_AP, "started ap.");
+
+    start_httpd();
 }

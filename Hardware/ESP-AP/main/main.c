@@ -2,7 +2,6 @@
 #include <esp_wifi.h>
 
 #include "wifi_ap/wifi_ap.h"
-#include "httpd_server/httpd_server.h"
 #include "mqttd_client/mqttd_client.h"
 
 void app_main() {
@@ -11,6 +10,5 @@ void app_main() {
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     start_ap();
-    start_httpd();
     connect_mqtt();
 }

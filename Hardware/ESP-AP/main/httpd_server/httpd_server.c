@@ -22,6 +22,7 @@ esp_err_t handler_config_sta(httpd_req_t *req) {
 }
 
 void start_httpd() {
+    ESP_LOGI(TAG_HTTPD, "starting http...");
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     httpd_handle_t handle = NULL;
 
@@ -31,4 +32,5 @@ void start_httpd() {
 
     ESP_ERROR_CHECK(httpd_start(&handle, &config));
     ESP_ERROR_CHECK(httpd_register_uri_handler(handle, &uri_config_sta));
+    ESP_LOGI(TAG_HTTPD, "started http...");
 }
