@@ -10,10 +10,11 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
     switchLedLight: false,
-    switchBedroomLight: false
-  },
+    switchBedroomLight: false,
+    hiddenSmartWifi: true
+  }, 
   changeSwitchLedLight(event) {
-    let payload = event.detail.value ? 'OPENLED' : 'CLOSELED';
+    let payload = event.detail.value ? 'OPEN_LED' : 'CLOSE_LED';
     wx.request({
       url: 'https://api.fuxin516.com/iotServer/publishMessage',
       data: {
@@ -68,10 +69,23 @@ Page({
       }
     })
   },
-  // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  tapSmartWifi() {
+    this.setData({
+      hiddenSmartWifi: false
+    })
+  },
+  cancelSmartWifi: function () {
+    this.setData({
+      hiddenSmartWifi: true
+    });
+  },
+  confirmSmartWifi: function () {
+    this.setData({
+      hiddenSmartWifi: true
+    })
+    wx.showToast({
+      title: 'TMD...代码又被崔经理那个狗产品删掉了...',
+      icon: 'none'
     })
   },
   onLoad() {
