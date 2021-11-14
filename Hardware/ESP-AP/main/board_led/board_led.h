@@ -4,6 +4,8 @@
 
 #define GPIO_LED_NUM 2
 
+int BOARD_LED_STATUS;
+
 void initializeBoardLed();
 
 void boardLedOpen();

@@ -4,8 +4,6 @@
 #include <driver/gpio.h>
 #include "board_led.h"
 
-static int BOARD_LED_STATUS = 0;
-
 void initializeBoardLed() {
     gpio_config_t gpio_config_structure;
     gpio_config_structure.pin_bit_mask = (1ULL << GPIO_LED_NUM);

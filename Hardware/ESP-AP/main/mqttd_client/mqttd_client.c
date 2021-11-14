@@ -5,9 +5,10 @@
 #include <esp_log.h>
 #include <mqtt_client.h>
 #include "mqttd_client.h"
-#include "../commad_handler/command_handler.h"
+#include "../command_handler/command_handler.h"
 
 const char *TAG_MQTT = "TAG_MQTT";
+esp_mqtt_client_handle_t client;
 
 static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
     char mag_data[100];
@@ -55,6 +56,11 @@ void connect_mqtt() {
             .password = MQTT_PASSWORD,
             .event_handle = mqtt_event_handler
     };
-    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
+    client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_start(client);
+}
+
+void publish_message(const char *message) {
+//    ESP_LOGI(TAG_MQTT, "MQTT_PUBLISH_MESSAGE : %s", message);
+    esp_mqtt_client_publish(client, MQTT_PUB_TOPIC, message, 0, 1, 0);
 }

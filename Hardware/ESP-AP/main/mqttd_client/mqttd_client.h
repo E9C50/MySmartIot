@@ -10,3 +10,5 @@
 #define MQTT_PUB_TOPIC "3C6LX6DIXP/NodeMCU-8266/pub"
 
 void connect_mqtt();
+
+void publish_message(const char *message);
