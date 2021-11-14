@@ -6,7 +6,9 @@
 #include <esp_log.h>
 #include <esp_wifi.h>
 #include <event_groups.h>
+
 #include "wifi_sta.h"
+#include "../board_led/board_led.h"
 
 int retry_num = 0;
 const char *TAG_WIFI_STA = "TAG_WIFI_STA";
@@ -18,6 +20,7 @@ void event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, voi
             esp_wifi_connect();
         } else if (event_id == WIFI_EVENT_STA_DISCONNECTED) {
             retry_num++;
+            boardLedClose();
             esp_wifi_connect();
             ESP_LOGI(TAG_WIFI_STA, "Retry to connect to the AP %d times.", retry_num);
         }
@@ -56,10 +59,12 @@ int connect_wifi(const char *wifiSsidStr, const char *wifiPassStr) {
 
     /* 根据事件标志组等待函数的返回值获取WiFi连接状态 */
     if (bits & WIFI_CONNECTED_BIT) {
+        boardLedOpen();
         ESP_LOGI(TAG_WIFI_STA, "connected to ap SSID:%s", wifiSsidStr);
         return 1;
     } else {
         ESP_LOGI(TAG_WIFI_STA, "connect timeout SSID:%s", wifiSsidStr);
+        boardLedClose();
         return 0;
     }
 }
