@@ -1,0 +1,9 @@
+**/*.log
+**/.DS_Store
+**/sdkconfig
+**/sdkconfig.old
+
+**/.idea/
+**/.vscode/
+**/build/
+**/cmake-build-debug/
