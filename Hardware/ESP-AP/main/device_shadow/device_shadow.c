@@ -9,13 +9,17 @@
 void publish_device_shadow() {
     cJSON *root = cJSON_CreateObject();
     cJSON *reported = cJSON_CreateObject();
-
+    cJSON_AddNumberToObject(reported, "esp-led", BOARD_LED_STATUS);
+    cJSON_AddNumberToObject(reported, "bedroom-light", BOARD_LED_STATUS);
     cJSON_AddItemToObject(root, "reported", reported);
-    cJSON_AddItemToObject(reported, "esp-led", cJSON_CreateNumber(BOARD_LED_STATUS));
-    cJSON_AddItemToObject(reported, "bedroom-light", cJSON_CreateNumber(1));
+//    char *json = cJSON_Print(root);
+    char *json = cJSON_PrintUnformatted(root);
+    publish_message(json);
 
-    publish_message(cJSON_Print(root));
     if (root) {
         cJSON_Delete(root);
+    }
+    if (json) {
+        cJSON_free(json);
     }
 }

@@ -26,5 +26,5 @@ void app_main() {
     esp_timer_handle_t test_p_handle = 0;
     esp_timer_create_args_t test_periodic_arg = {.callback = &timer_tick_loop};
     esp_timer_create(&test_periodic_arg, &test_p_handle);
-    esp_timer_start_periodic(test_p_handle, 60 * 1000 * 1000);
+    esp_timer_start_periodic(test_p_handle, 1 * 1000 * 1000);
 }
