@@ -54,6 +54,7 @@ void connect_mqtt() {
             .client_id = MQTT_CLIENT_ID,
             .username = MQTT_USERNAME,
             .password = MQTT_PASSWORD,
+            .keepalive = 60,
             .event_handle = mqtt_event_handler
     };
     client = esp_mqtt_client_init(&mqtt_cfg);
