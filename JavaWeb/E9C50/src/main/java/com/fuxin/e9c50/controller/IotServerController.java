@@ -1,14 +1,10 @@
 package com.fuxin.e9c50.controller;
 
-import com.tencentcloudapi.common.AbstractModel;
-import com.tencentcloudapi.common.Credential;
-import com.tencentcloudapi.common.exception.TencentCloudSDKException;
-import com.tencentcloudapi.common.profile.ClientProfile;
-import com.tencentcloudapi.common.profile.HttpProfile;
-import com.tencentcloudapi.iotcloud.v20180614.IotcloudClient;
-import com.tencentcloudapi.iotcloud.v20180614.models.PublishMessageRequest;
-import com.tencentcloudapi.iotcloud.v20180614.models.PublishMessageResponse;
+import com.fuxin.e9c50.mqtt.sender.MqttMessageSender;
+import com.fuxin.e9c50.utils.DeviceStatus;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,32 +15,28 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/iotServer")
 public class IotServerController {
 
-    private final String productId = "3C6LX6DIXP";
-    private final String domainName = "iotcloud.tencentcloudapi.com";
-    private final String secretId = "AKIDnPlrhGZbMq3ze2rPggPr2wZuyqRnshFW";
-    private final String secretKey = "1lEQKxKQEl10i9JEtHPGq89tOcZEcjZ8";
+    @Value("${mqtt.topic.command}")
+    private String topicPublish;
+
+    private final DeviceStatus deviceStatus;
+    private final MqttMessageSender mqttMessageSender;
+
+    @Autowired
+    public IotServerController(DeviceStatus deviceStatus, MqttMessageSender mqttMessageSender) {
+        this.deviceStatus = deviceStatus;
+        this.mqttMessageSender = mqttMessageSender;
+    }
 
     @GetMapping("/publishMessage")
-    public String publishMessage(
-            @RequestParam("deviceName") String deviceName,
+    public boolean publishMessage(
             @RequestParam("payload") String payload
     ) {
-        try {
-            Credential cred = new Credential(secretId, secretKey);
-            HttpProfile httpProfile = new HttpProfile();
-            httpProfile.setEndpoint(domainName);
-            ClientProfile clientProfile = new ClientProfile();
-            clientProfile.setHttpProfile(httpProfile);
-            IotcloudClient client = new IotcloudClient(cred, "", clientProfile);
-            PublishMessageRequest req = new PublishMessageRequest();
-            req.setTopic(productId + "/" + deviceName + "/sub");
-            req.setPayload(payload);
-            req.setProductId(productId);
-            req.setDeviceName(deviceName);
-            PublishMessageResponse resp = client.PublishMessage(req);
-            return AbstractModel.toJsonString(resp);
-        } catch (TencentCloudSDKException exception) {
-            return null;
-        }
+        mqttMessageSender.send(topicPublish, payload);
+        return true;
+    }
+
+    @GetMapping("/status")
+    public String getStatus() {
+        return deviceStatus.getStatus();
     }
 }
