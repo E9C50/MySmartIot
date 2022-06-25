@@ -3,12 +3,12 @@
 #include <PubSubClient.h>
 
 // ****************************************************
-const char *mqttServer = "3C6LX6DIXP.iotcloud.tencentdevices.com";
-const char *mqttUserName = "3C6LX6DIXPNodeMCU-8266;12010126;ZKREJ;1672239330";
-const char *mqttPassword = "59eb0420ef86c1fc383a23da8133e3df23cafff13e87e80e58a1938e000c1c0e;hmacsha256";
-const char *mqttClientId = "3C6LX6DIXPNodeMCU-8266";
-const char *mqttSubTopic = "3C6LX6DIXP/NodeMCU-8266/sub";
-const char *mqttPubTopic = "3C6LX6DIXP/NodeMCU-8266/pub";
+const char *mqttServer = "mqtt-server.fxxlxy.com";
+const char *mqttUserName = "MYSMARTIOT";
+const char *mqttPassword = "jasonFX3A87WLQ";
+const char *mqttClientId = "SmartIot-NodeMCU-8266";
+const char *mqttSubTopic = "smart-iot/device/esp/command";
+const char *mqttPubTopic = "smart-iot/device/esp/report";
 // ****************************************************
 
 // ****************************************************
@@ -89,11 +89,11 @@ void callback(char *topic, byte *payload, unsigned int length)
   message[length] = 0;
   Serial.println(message);
 
-  if (String(message) == "OPENLED")
+  if (String(message) == "OPEN_LED")
   {
     digitalWrite(BUILTIN_LED, LOW); // Turn the LED on
   }
-  else if (String(message) == "CLOSELED")
+  else if (String(message) == "CLOSE_LED")
   {
     digitalWrite(BUILTIN_LED, HIGH); // Turn the LED off
   }

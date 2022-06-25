@@ -2,7 +2,7 @@
 // Created by fuxin on 11/14/21.
 //
 
-#define MQTT_SERVER  "mqtt://mqtt.fuxin516.com"
+#define MQTT_SERVER  "mqtt://mqtt-server.fxxlxy.com"
 #define MQTT_USERNAME "MYSMARTIOT"
 #define MQTT_PASSWORD "jasonFX3A87WLQ"
 #define MQTT_CLIENT_ID "SmartIot-NodeMCU-8266"
